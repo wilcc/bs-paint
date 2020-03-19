@@ -1,8 +1,8 @@
 .app {
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
-  height: 500px;
+
   align-items: center;
   justify-content: space-between;
 }
@@ -37,6 +37,7 @@ justify-content: space-between;
 
 .brush {
   display: flex;
+  flex-direction: row;
 }
 
 .icon {
@@ -49,6 +50,10 @@ justify-content: space-between;
   height: 30px;
   border: 1px solid black;
 
+}
+.opa{
+  display: flex;
+  flex-direction: row;
 }
 
 .canvas {
@@ -121,4 +126,16 @@ justify-content: space-between;
 }
 .color-511{
   background-color: maroon;
+}
+.opacity{
+  opacity: 1;
+}
+.opacity1{
+  opacity: 0.75;
+}
+.opacity11{
+  opacity: .5;
+}
+.opacity111{
+  opacity: 0; 
 }

@@ -23,6 +23,9 @@ const paletteColor = document.querySelectorAll('.palette-color')
 const pickColor = function(location){
     return location.classList[1]
 }
+const pickColor2 = function(location){
+    return location.classList[2]
+}
 
 
 const replaceColorOfBrush = function(clicked){
@@ -102,3 +105,41 @@ const funColor = function(){
 }
 const  fullColorButton = document.querySelector('#submit4')
 fullColorButton.addEventListener('click',funColor)
+
+const opacityDec = function(){
+    
+    for(const box of square){
+        if(box.classList.length<3)
+        {box.classList.add('opacity')
+        }
+        if(pickColor2(box).length>9){
+            box.classList.replace(
+                pickColor2(box),pickColor(box).slice(0,7))
+        }
+        else box.classList.replace(pickColor2(box),pickColor2(box)+1)
+}
+}
+const opacityInc = function(){
+    
+    for(const box of square){
+        if(pickColor2(box).length===10){
+            box.classList.replace(
+                pickColor2(box),pickColor2(box).slice(0,9))
+        }
+        else if(pickColor2(box).length==9){
+            box.classList.replace(
+                pickColor2(box),pickColor2(box).slice(0,8))
+        }
+         else if(pickColor2(box).length===8){
+            box.classList.replace(
+                pickColor2(box),pickColor2(box).slice(0,7))
+        }
+}
+}
+
+
+
+const opaDecButton = document.querySelector('#submit5')
+opaDecButton.addEventListener('click',opacityDec)
+const opsIncButton = document.querySelector('#submit6')
+opsIncButton.addEventListener('click',opacityInc)
