@@ -1,25 +1,42 @@
 .app {
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headings {
-
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 .brush-selection {
   height: 70px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .paint {
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .palette {
   display: flex;
+
 }
 
 .brush {
-
+  display: flex;
 }
 
 .icon {
@@ -31,32 +48,77 @@
   width: 30px;
   height: 30px;
   border: 1px solid black;
+
 }
 
 .canvas {
+  display: grid;
+  grid-template-columns:repeat(10, 1fr);
+  grid-template-rows:repeat(10, 1fr);
+  border: 1px solid black;
+  height: 300px;
+  width: 300px;
+  /* align-items: center; */
 
 }
 
 .square {
   transition: 0.5s;
+  display: block;
 }
 
 .color-1 {
+  background-color: red;
 
 }
 
 .color-2 {
-
+  background-color: blue;
 }
 
 .color-3 {
-
+  background-color: yellow;
 }
 
 .color-4 {
-
+  background-color: green;
 }
 
 .color-5 {
+  background-color: white;
+}
 
+.color-6 {
+  background-color: black;
+}
+
+.color-11{
+  background-color: blueviolet;
+}
+.color-21{
+  background-color: cyan;
+}
+.color-31{
+  background-color: darkgoldenrod;
+}
+.color-41{
+  background-color: darkseagreen;
+}
+.color-51{
+  background-color: dimgrey;
+}
+.color-111{
+  background-color: gold;
+}
+.color-211{
+  background-color: greenyellow;
+}
+.color-311{
+  background-color: hotpink;
+}
+.color-411{
+  background-color: lightskyblue;
+}
+.color-511{
+  background-color: maroon;
 }
