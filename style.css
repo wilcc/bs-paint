@@ -127,6 +127,7 @@ justify-content: space-between;
 .color-511{
   background-color: maroon;
 }
+
 .opacity{
   opacity: 1;
 }
@@ -134,7 +135,7 @@ justify-content: space-between;
   opacity: 0.75;
 }
 .opacity11{
-  opacity: .5;
+  opacity: 0.5;
 }
 .opacity111{
   opacity: 0; 

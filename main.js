@@ -27,7 +27,7 @@ const replaceColorOfSquare = function(clicked){
     click.classList.replace(pickColor(click),pickColor(brushButton))
 }
 for(const box of square){
-box.addEventListener('ondrag',replaceColorOfSquare)}
+box.addEventListener('click',replaceColorOfSquare)}
 
 
 
