@@ -75,7 +75,7 @@ function count(){
         result++
     }
     if(result === 100){
-        window.alert("Really?! Got A.C.D. problem?");
+        window.alert("Really?! Got O.C.D. problem?");
     }
 }
 }
